@@ -18,9 +18,9 @@ do
             aws-vault exec kops --no-session -- \
                 kops create cluster \
                     --zones us-east-2a \
-                    --node-size t2.small \
-                    --master-size t2.small \
-                    --node-count 2 \
+                    --node-size t2.medium \
+                    --master-size t2.medium \
+                    --node-count 3 \
                     --master-count 1 \
                     ${NAME}
 
